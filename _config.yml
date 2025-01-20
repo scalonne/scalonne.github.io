@@ -1,0 +1,13 @@
+google_analytics: G-TC4NS1MZKH
+
+header_pages:
+  - index.html
+  # - blog.html
+  - about.md
+
+style: dark
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -1,0 +1,31 @@
+.typewriter {
+	display: inline-block;
+}
+
+.typed-out {
+	margin-top: 0;
+	overflow: hidden;
+	//border-right: .5em solid color-mix(in srgb, currentColor 20%, transparent);
+	white-space: nowrap;
+	animation: typing 1s steps(10, end) forwards;
+	//blinking 1s infinite;
+	width: 0;
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+
+@keyframes blinking {
+	from {
+		border-color: transparent
+	}
+	to {
+		border-color: color-mix(in srgb, currentColor 20%, transparent);
+	}
+}
