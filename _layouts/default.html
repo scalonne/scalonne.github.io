@@ -2,11 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 <meta http-equiv="Content-Security-Policy"
   content="default-src 'none';
-  script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
-  style-src 'self' https://fonts.googleapis.com;
-  img-src 'self' https://www.googletagmanager.com;
+  script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://tagmanager.google.com;
+  style-src 'self' https://*.googletagmanager.com https://tagmanager.google.com https://fonts.googleapis.com;
+  img-src 'self' https://*.googletagmanager.com https://ssl.gstatic.com https://www.gstatic.com;
   font-src 'self' https://fonts.gstatic.com;
-  connect-src 'self' www.googletagmanager.com;
+  connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
   media-src 'self';
   object-src 'self'; child-src 'self'; form-action 'none'; base-uri 'self'" />
 <meta http-equiv="X-XSS-Protection" content="1;mode=block" always />
